@@ -26,11 +26,10 @@ public class Main {
         Localidad villaCarlosPaz = Localidad.builder().id(4L).nombre("Villa Carlos Paz").provincia(cordoba).build();
 
         // Domicilios
-        Domicilio domCaba = Domicilio.builder().id(1L).calle("Av. Corrientes").numero(1000).cp(1000).localidad(caba).build();
-        Domicilio domLaPlata = Domicilio.builder().id(2L).calle("Calle 50").numero(200).cp(1900).localidad(laPlata).build();
-        Domicilio domCordobaCap = Domicilio.builder().id(3L).calle("Bv. San Juan").numero(500).cp(5000).localidad(cordobaCapital).build();
-        Domicilio domVCP = Domicilio.builder().id(4L).calle("Av. San Martín").numero(300).cp(5152).localidad(villaCarlosPaz).build();
-
+        Domicilio domCaba = Domicilio.builder().id(1L).calle("Av. Rivadavia").numero(4500).cp(1406).localidad(caba).build();
+        Domicilio domLaPlata = Domicilio.builder().id(2L).calle("Diagonal 74").numero(120).cp(1900).localidad(laPlata).build();
+        Domicilio domCordobaCap = Domicilio.builder().id(3L).calle("Av. Colón").numero(800).cp(5000).localidad(cordobaCapital).build();
+        Domicilio domVCP = Domicilio.builder().id(4L).calle("Av. Cárcano").numero(250).cp(5152).localidad(villaCarlosPaz).build();
         // Sucursales
         Sucursal suc1 = Sucursal.builder().id(1L).nombre("Sucursal CABA").horarioApertura(LocalTime.of(9, 0)).horarioCierre(LocalTime.of(18, 0)).esCasaMatriz(true).domicilio(domCaba).build();
         Sucursal suc2 = Sucursal.builder().id(2L).nombre("Sucursal La Plata").horarioApertura(LocalTime.of(9, 0)).horarioCierre(LocalTime.of(18, 0)).esCasaMatriz(false).domicilio(domLaPlata).build();
